@@ -13,7 +13,7 @@ const app = express();
 config({ path: "./config/config.env" });
 
 app.use(cors({
-  origin: ["FRONTEND_URL", "DASHBOARD_URL"], // Allow multiple frontends
+  origin: ["DASHBOARD_URL", "FRONTEND_URL"], // Allow multiple frontends
   credentials: true,
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization"
