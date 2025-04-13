@@ -13,7 +13,7 @@ const app = express();
 config({ path: "./config/config.env" });
 
 app.use(cors({
-  origin: ["FRONTEND_URL", "DASHHBOAD_URL"
+  origin: ["FRONTEND_URL", "DASHHBOAD_URL"]
   credentials: true,
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization"
