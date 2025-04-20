@@ -13,10 +13,10 @@ const app = express();
 config({ path: "./config/config.env" });
 
 app.use(cors({
-  origin: ["FRONTEND_URL", "DASHHBOAD_URL"],
-  methods: "GET,POST,PUT,DELETE",
+  origin: [process.env.FRONTEND_URL, process.env.DASHHBOAD_URL],
+   method: ["GET", "POST", "DELETE", "PUT"],
   credentials: true,
-  allowedHeaders: "Content-Type,Authorization"
+  // allowedHeaders: "Content-Type,Authorization"
 }));
 
 app.use(cookieParser());
